@@ -1,0 +1,327 @@
+@charset "utf-8";
+/*样式初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select{*font-size:100%}
+a{text-decoration:none;color:#000;}
+i{font-style:normal;}
+img{cursor:pointer;}
+
+/*基础样式:宽*/
+	.w0{width:0px;}
+	.w100{width:100%;}
+	.w80{width:80%;}
+	.w1080{width:1080px;}
+	.w750{width:750px;}
+	.w700{width:700px;}
+	.w660{width:660px;}
+	.w320{width:320px;}
+	.w240{width:240px;}
+	.w220{width:220px;}
+	.w200{width:200px;}
+	.w300{width:300px;}
+	.w339{width:339px;}
+	.w150{width:150px;}
+	.w340{width:340px;}
+	.w390{width:390px;}
+	.w480{width:480px;}
+	.w269{width:269px;}
+/*基础样式:高*/
+	.h80{height:80%;}
+	.h50{height:50px;}
+	.h480{height:480px;}
+	.h240{height:240px;}
+	.h250{height:250px;}
+	.h520{height:520px;}
+	.h550{height:550px;}
+	.h600{height:600px;}
+	.h300{height:300px;}
+	.h220{height:220px;}
+	.h175{height:175px;}
+	.h360{height:360px;}
+/*基础浮动样式*/
+	.clearfix::after{
+		content:"";
+		display:block;
+		clear:both;
+	}
+	.f-l{float:left;}
+	.f-r{float:right;}
+/*外边距*/
+	.m-auto{margin:auto;}
+	.m-l10{margin-left:10px;}
+	.m-l20{margin-left:20px;}
+	.m-l30{margin-left:30px;}
+	.m-l31{margin-left:31px;}
+	.m-l40{margin-left:40px;}
+	.m-l80{margin-left:80px;}
+	.m-l14{margin-left:13px;}
+	.m-t5{margin-top:5px;}
+	.m-t10{margin-top:10px;}
+	.m-l13{margin-left:13px;}
+	.m-t15{margin-top:15px;}
+	.m-t20{margin-top:20px;}
+	.m-t40{margin-top:40px;}
+	.m-t80{margin-top:80px;}
+/*基础文字样式*/
+	.f-s12{font-size:12px;}
+	.f-s14{font-size:14px;}
+	.f-s18{font-size:18px;}
+	.f-s20{font-size:20px;}
+	.f-c{color:#757575;}
+	.c-w{color:#fff;}
+	.fw-m{font-weight:normal;}
+/*块样式*/
+	.d-b{display:block;}
+	.d-n{display:none;}
+/*超出隐藏*/
+	.o-h{overflow:hidden;}
+/*定位*/
+	.p-r{position:relative;}
+	.p-a{position:absolute;}
+	.p-l0{left:0;}
+	.p-t0{top:0;}
+	.p-r0{right:0;}
+	.p-b0{bottom:0;}
+/*点击小手*/
+	.c-p{cursor:pointer;}
+/*辅助背景色*/
+	.red{background-color:red;}
+/*轮播样式1*/
+	.text{bottom:45px;text-align:center;z-index:1;}
+	.text > h3,.text > p{color:#fff;}
+	.text > h3{font-size:26px;}
+	.bg-pic{
+		width:750px;
+		height:130px;
+		bottom:0;
+		background:url("../images/uicon.png") no-repeat -350px 0px;	
+	}
+	.swiper-pagination .swiper-pagination-bullet{
+		width:25px;
+		height:6px;
+		border-radius:0%;
+	}
+	.swiper-pagination .swiper-pagination-bullet-active{
+		background-color:#f03;
+	}
+/*轮播样式2*/
+	.banner-style2 > ul li{
+		position:relative;	
+	}
+	.banner-style2-img{
+		width:400px;
+		height:400px;
+		margin:auto;
+	}
+	.banner-style2-text{
+		position:absolute;
+		width:800px;
+		height:100px;
+		left:-200px;
+		background:#fff;
+		opacity:0;
+	}
+	.swiper-slide-active .banner-style2-text{
+		opacity:1;
+	}
+/*方形缩放效果样式*/
+	.open1{
+		width:100%;
+		height:0;
+		top:0;
+		bottom:0;
+		margin:auto;
+		background-color:rgba(0,0,0,.8);
+		transition:.3s;
+		color:#fff;
+	}
+	.open:hover .open1{
+		height:100%;
+	}
+/*上拉效果样式*/
+	.up{
+		overflow:hidden;
+		position:relative;
+		cursor:pointer;	
+	}
+	.up > p{
+		font-size:14px;
+		text-align:center;
+		line-height:30px;
+	}
+	.up-box{
+		position:absolute;
+		width:90%;
+		height:0;
+		left:0;
+		right:0;
+		bottom:0;
+		margin:auto;
+		background-color:#fff;
+		transition:.3s;
+	}.up-box > a{
+		display:block;
+		margin-top:10px;
+	}
+	.up-box > a,.up-box > p{
+		margin-left:5%;
+		font-size:14px;
+	}
+	.up-box > p,.up-box > i{
+		margin-left:5%;
+		margin-top:5px;
+	}
+	.up-box > p{
+		overflow:hidden;
+		width:90%;
+		height:40px;	
+	}
+	.up:hover .up-box{
+		height:154px;
+	}
+/*头部样式1*/
+	.title{
+		width:225px;
+		height:35px;
+		margin:auto;
+		background:url("../images/uicon.png") no-repeat -110px -50px;
+	}
+	.nav{
+		width:100%;
+		height:40px;
+		margin-top:20px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		line-height:40px;
+		text-align:center;
+	}
+	.nav > ul{
+		width:560px;
+	}
+	.nav ul > li + li{
+		margin-left:25px;
+	}
+/*评论样式*/
+	.comment{
+		display:block;
+		width:10px;
+		height:16px;
+		padding-left:18px;
+		background:url("../images/icon_indexbg.jpg") no-repeat 0 -23px;
+		line-height:16px;
+		font-size:16px;
+	}
+/*评论样式1*/
+	.comment1{
+		width:30px;
+		height:16px;
+		line-height:16px;
+		font-size:16px;
+		color:#fff;
+		font-size:14px;
+	}
+	.comment1-bg{
+		display:inline-block;
+		width:18px;
+		height:16px;
+		background:url("../images/uicon.png") no-repeat -326px -110px;
+	}
+	.comment1-num{
+		width:12px;
+		height:16px;
+		line-height:16px;
+		font-size:14px;
+	}
+/*分界线样式b-line*/
+	.b-line{
+		width:100%;
+		height:7px;
+		background-image:url("../images/nstripebg.png");
+	}
+/*方框样式*/
+	.pane{
+		overflow:hidden;
+		width:120px;
+		height:75px;
+		background:url("../images/icon_indexbg.jpg") no-repeat 0px -670px;
+		text-align:center;
+	}
+/*tab栏样式*/
+	.tab-nav{
+		width:100%;
+		height:40px;
+		margin-top:10px;
+		background-color:#eee;
+		text-align:center;
+		line-height:40px;
+	}
+	.tab-title{
+		position:relative;
+		width:130px;
+		height:40px;
+		background-color:#000;
+		color:#fff;
+	}
+	.tab-title::after{
+		content:"";
+		position:absolute;
+		width:0;
+		left:100%;
+		top:14px;
+		border:6px solid transparent;
+		border-left:6px solid #000;
+	}
+	.tab-line,
+	.tab-line1,
+	.tab-line2{
+		width:0;
+		height:2px;
+		background-color:red;
+		bottom:0;
+		left:0;
+		right:0;
+		margin:auto;
+		transition:.3s;
+	}
+	.tab-nav ul li{
+		margin-left:30px;
+	}
+	.tab-content{
+		position:relative;
+		width:1080px;
+		height:300px;
+		margin-top:20px;
+	}
+	.tab-content-list,
+	.tab-content-list1,
+	.tab-content-list2{
+		position:absolute;
+		display:none;
+		width:1080px;
+		height:300px;
+		background-color:#fff;
+	}
+	.tab-content ul li > ol li{
+		overflow:hidden;
+		width:340px;
+		height:300px;
+		line-height:30px;
+		font-size:14px;
+	}
+	.show{
+		display:block;
+	}
+	.show1{
+		width:100%;
+	}

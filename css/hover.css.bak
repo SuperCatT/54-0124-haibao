@@ -1,0 +1,104 @@
+@charset "utf-8";
+/*网页头部更多hover*/
+	#header .htn-more:hover + .htn-list > .htn-list1{
+		top:-50px;
+		transition:.3s;
+	}
+	#header .htn-more:hover{
+		background-image:url("../images/header/nav2016-morebg.png");
+	}
+	#header a:hover{
+		color:red;
+	}
+/*头部轮播前进后退键hover*/
+	#header .b-hover1:hover .swiper-button-prev{
+		left:682px;
+		opacity:1;
+	}
+	#header .b-hover1:hover .swiper-button-next{
+		left:682px;
+		opacity:1;
+	}
+/*trends轮播前进后退键hover*/
+	#content .ctb-banner:hover .swiper-button-prev{
+		left:412px;
+		opacity:1;
+	}
+	#content .ctb-banner:hover .swiper-button-next{
+		left:412px;
+		opacity:1;
+	}
+/*a标签hover*/
+	a:hover{color:red;}
+/*what's right now 的轮播的更多试用hover*/
+	#content .cncrb-btn:hover .btn-text{
+		top:-34px;
+	}
+/*what's right now 的轮播的前进后退键hover*/
+	#content .cncr-banner .swiper-button-prev:hover{
+		background-position:-69px -71px;
+	}
+	#content .cncr-banner .swiper-button-next:hover{
+		background-position:-85px -71px;
+	}
+/*what's right now 的展开样式hover*/
+	#content .btn:hover{
+		background-color:#FFF;
+		color:#000;
+	}
+/*video原创视频播放键hover*/
+	#content .cvcl-img:hover .cvcli-play{
+		background-position:-222px -155px;
+		background-color:rgba(0,0,0,.5);
+	}
+	#content .cvcr-img:hover .cvcri-play{
+		background-position:-128px -145px;
+		background-color:rgba(0,0,0,.5);
+	}
+/*trends底部GO按键hover*/
+	.ctf-btn:hover .white{
+		top:-32px;
+	}
+	.ctf-btn:hover .black{
+		top:0;
+	}
+/*brands轮播前进后退键hover*/
+	.c-brands:hover .swiper-button-prev{
+		left:30px;
+		opacity:1;
+	}
+	.c-brands:hover .swiper-button-next{
+		left:720px;
+		opacity:1;
+	}
+/*brands的footer字母hover*/
+	.cbf-content2 .word > p a:hover{
+		background-color:#f36;
+		color:#fff;
+	}
+/*beauty轮播前进后退键hover*/
+	.c-beauty:hover .swiper-button-prev{
+		left:30px;
+		opacity:1;
+	}
+	.c-beauty:hover .swiper-button-next{
+		left:720px;
+		opacity:1;
+	}
+/*lifestyle生活轮播前进后退键hover*/
+	.c-lifestyle:hover .swiper-button-prev{
+		left:30px;
+		opacity:1;
+	}
+	.c-lifestyle:hover .swiper-button-next{
+		left:720px;
+		opacity:1;
+	}
+/*interactive互动图片hover*/
+	.ciclct-img ul li:hover .ciclct-img-text{
+		display:block;
+	}
+/*interactive互动按键hover*/
+	.ciclct-btn1 a:hover{
+		background-position-x:-731px;
+	}
